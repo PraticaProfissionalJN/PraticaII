@@ -16,29 +16,29 @@
 
     <!--Menu Inicial -->
     <nav>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"> 
+      <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark"> 
         <a class="navbar-brand" href="#"><i class="fas fa-plus"></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label=" Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sobrenos">Sobre Nós</a>
+              <a class="nav-link" href="#sobrenos"><i class="fas fa-users"></i> Sobre Nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#prof">Profissionais</a>
+              <a class="nav-link" href="#prof"><i class="fab fa-black-tie"></i> Profissionais</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-phone"></i> Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user"></i> Entre ou Cadastre-se</a>
+              </li>
           </ul>
-    <!--Login -->
-          <div class="btn-cadastro">  
-            <button type="button" class="btn btn-default">
-            <i class="fas fa-user"></i>
-            </button>
-          </div>
         </div>
       </nav>
     </nav>
@@ -66,7 +66,24 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-  </div>   
+  </div> 
+  <!--Beneficios -->
+  <div class="container">
+    <div id="motivos" class="beneficios">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Fácil de encontrar</h3>
+                <h4>Hoje em dia é muito fácil desconfiar etc etc etc.</h4>
+            </div>
+            <div class="col-md-4">
+                <h3>Mais segurança</h3>
+                <h4>Um um ambiente que proporcina uma forma mais segura de buscar o profissional desejado.</h4>
+            </div>
+            <div class="col-md-4">
+                <h3>Analise os dados do profissional</h3>
+                <h4>Os profissionais descrevem por completo suas experiências.</h4>
+            </div>
+       </div>  
     <!--Sobre Nós-->  
   <div class="container">
     <div id="sobrenos" class="sobre-nos">
@@ -89,8 +106,9 @@
       </div>
     </div>
   </div>  
-
-
+  <footer class="footer">
+    <span class="text-muted">Bom cuidado™</span>
+  </footer>
     <script>
       $('.carousel').carousel({
         interval: 3500
@@ -103,3 +121,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+

@@ -8,6 +8,7 @@
 	color: #808080;
 }
 .sobre-nos h3{
+	margin-top: 70px;
 	text-align: center;
 }
 .prof-home{
@@ -20,6 +21,12 @@
 	text-align: center;
 }
 .carousel-inner {
-	width: 35%;    
+	margin-top: 80px;
 	height: 500px ; 
+}
+.beneficios{
+	margin-top: 70px;
+}
+.footer{
+	background-color: #343a40;
 }
