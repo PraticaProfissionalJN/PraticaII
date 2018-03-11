@@ -19,3 +19,7 @@
 .prof-home h3{
 	text-align: center;
 }
+.carousel-inner {
+	width: 35%;    
+	height: 500px ; 
+}
