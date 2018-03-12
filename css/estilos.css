@@ -31,5 +31,7 @@
 	background-color: #343a40;
 }
 .img-responsive {
+	margin-right: -50%;
 	margin-top: 10px;
+	width: 100px;
 }
