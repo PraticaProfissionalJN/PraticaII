@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
-     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
@@ -19,7 +18,7 @@
     <!--Menu Inicial -->
     <nav>
       <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark"> 
-        <a class="navbar-brand" href="#"><strong>Safe Care Solutions</strong></i></a>
+        <a class="navbar-brand" href="#"><strong>Bem Cuidar</strong></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label=" Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,7 +45,7 @@
     </nav>
     <!--Carossel -->
   <div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -78,22 +77,22 @@
     <div id="motivos" class="beneficios">
         <div class="row">
             <div class="col-md-3 text-center">
-              <img src="img/user.jpg" class="img-responsive" alt="Imagem Responsiva">
+              <img src="img/user.jpg" class="img-fluid" id="beneficios" alt="Imagem Responsiva">
                 <h4><strong>Cadastre-se</strong></h4>
                 <h5>Crie um usuário e senha para acesso ao ambiente.</h5>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/lupa.jpg" class="img-responsive" alt="Imagem Responsiva">
+                <img src="img/lupa.jpg" class="img-fluid" id="beneficios" alt="Imagem Responsiva">
                 <h4><strong>Busque o profissional</strong></h4>
                 <h5>Os profissionais descrevem por completo suas experiências.</h5>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/profissional.png" class="img-responsive" alt="Imagem Responsiva">
+                <img src="img/profissional.png" class="img-fluid" id="beneficios" alt="Imagem Responsiva">
                 <h4><strong>Analise os profissionais</strong></h4>
                 <h5>Analise os perfis, avaliações e comentários. Em seguida, escolha o profissional que melhor lhe atende.</h5>
             </div>
             <div class="col-md-3 text-center">
-              <img src="img/avaliar.jpg" class="img-responsive" alt="Imagem Responsiva">
+              <img src="img/avaliar.jpg" class="img-fluid" id="beneficios" alt="Imagem Responsiva">
               <h4><strong>Avalie</strong></h4>
               <h5>Avalie e comente sobre o serviço prestado. É muito importante para nós e outros usuários.</h5>
           </div>
@@ -110,7 +109,7 @@
             <p class="lead">O ambiente do Cuidar bem, possibilita que vários profissionais da área possam oferecer seus serviços. Eles descrevem suas experiências, cursos, especialidades, área de atuação, etc.</p>
           </div>
           <div class="col-md-5 text-center" id="imagem_quadro1">
-            <img class="featurette-image" img src="img/cuidador.jpg" alt="Coloque uma imagem aqui">
+              <img src="img/cuidador.jpg" class="img-fluid" alt="Responsive image">
           </div>
         </div>
         <br>
@@ -179,12 +178,50 @@
       </div>
     </div>
   </div>  
+  <!--comentários-->
+  
   <!-- Rodapé -->
-  <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md text-center">
+          <img class="mb-2" src="img/scs.jpg" alt="" width="70" height="70">
+          <small class="d-block mb-3 text-muted">&copy; Bem Cuidar - Todos os direitos reservados - 2018.</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Fale Conosco</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Recursos</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Sobre</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Equipe</a></li>
+            <li><a class="text-muted" href="#">Política de Privacidade</a></li>
+            <li><a class="text-muted" href="#">Termos</a></li>
+          </ul>
+          <br>
+          <p class="float-right">
+              <a href="#">Voltar ao topo da página</a>
+            </p>
+        </div>
       </div>
     </footer>
+  </div>
     <script>
       $('.carousel').carousel({
         interval: 3500
