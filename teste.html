@@ -7,27 +7,68 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- TRIGGER -->
     
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <title>Bom Cuidado</title>
   </head>
   <body>
 
     <!--Menu Inicial -->
     <nav>
+      
       <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark"> 
+        
         <a class="navbar-brand" href="#"><strong>Bem Cuidar</strong></i></a>
+        
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label=" Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-              
+            <!--Modal -->
+              <div class="modal fade brandmodal" id="SignInModal" role="dialog">
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title"><img src="img/logo.png" class="modal-logo text-center" /></h4>
+                      </div>
+                      <div class="modal-body text-center">    
+                      <form action="" method="POST" autocomplete="off">
+                        <h5><i class="fa fa-lock"></i> <strong>Login</strong></h5>
+                        <div class="modalform-group">
+                        <div class="form-group">
+                        <div class="input-group">
+                        <span class="input-group-addon"> <i class="fa fa-envelope"></i> </span>
+                        <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail" required="" />
+                        </div>
+                        <div class="input-group">
+                        <span class="input-group-addon"> <i class="fa fa-key"></i> </span>
+                        <input type="password" name="password"  class="form-control" placeholder="Digite sua senha"  required="" />
+                        </div>
+                       </div>
+                       <button type="submit" class="btn btn-block btn-primary"><i class="fas fa-sign-in-alt"></i> <strong>Entre</strong> </button>
+                        </div>
+                       </form> 
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <span class=""><a href="#" class="btn btn-default btn-sm"><i title="Forgot Password ?" class="fa fa-1x fa-question-circle"></i> Esqueceu a Senha? </a></span>
+                        <p class="pull-right"> <a href="#register" class="btn btn-warning btn-md"><strong>Cadastre-se</strong> <i class="fas fa-pencil-alt"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             <li class="nav-item active">
+              
               <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="#sobrenos"><i class="fas fa-users"></i> Sobre Nós</a>
             </li>
@@ -37,8 +78,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fas fa-phone"></i> Contato</a>
             </li>
-            <a class="btn btn-lg btn-primary"  id="botao" href="#SignInModal" data-toggle="modal" data-target="#SignInModal" ><i class="far fa-user"></i> Entre ou Cadastre-se</a>
-           
+            
+              <a class="btn btn-lg btn-dark"  id="botao" href="#SignInModal" data-toggle="modal" data-target="#SignInModal" ><i class="far fa-user"></i> Entre ou Cadastre-se</a>
+              
           </ul>
         </div>
       </nav>
@@ -115,7 +157,7 @@
         <br>
         <br>
         <hr class="featurette-divider">
-        <!-- Fotos
+        <!-- Fotos-->
         <div class="container">
             <div id="sobrenos" class="sobre-nos">
               <div class="row">
@@ -154,56 +196,39 @@
                     <p class="card-text"><small class="text-muted"></small></p>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="img/foto.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Kelvin Lucas</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text"><small class="text-muted"></small></p>
-                  </div>
-                </div>
             </div>
-            -->
-  <!--Modal Login-->
-  <div class="modal fade brandmodal" id="SignInModal" role="dialog">
-      <div class="modal-dialog modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"></button>
-            <h4 class="modal-title"><img src="img/logo.png" class="img-fluid" class="modal-logo text-center" /></h4>
-          </div>
-          <div class="modal-body text-center">    
-          <form action="" method="POST" autocomplete="off">
-            <h5><i class="fa fa-lock"></i> <strong>Login</strong></h5>
-            <div class="modalform-group">
-            <div class="form-group">
-            <div class="input-group">
-            <span class="input-group-addon"> <i class="fa fa-envelope"></i> </span>
-            <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail" required="" />
-            </div>
-            <div class="input-group">
-            <span class="input-group-addon"> <i class="fa fa-key"></i> </span>
-            <input type="password" name="password"  class="form-control" placeholder="Digite sua senha"  required="" />
-            </div>
-            <div class="senha">
-            <span class=""><a href="#" class="btn btn-default btn-sm"><i title="Forgot Password ?" class="fa fa-1x fa-question-circle"></i> Esqueci a senha </a></span>
-          </div>
-           </div>
-           <button type="submit" class="btn btn-block btn-primary"><i class="fas fa-sign-in-alt"></i> <strong>Entre</strong> </button>
-            </div>
-            <br>
-            <p class="pull-right"> <a href="#register" class="btn btn-warning btn-md"><strong>Cadastre-se</strong> <i class="fas fa-pencil-alt"></i></a></p>
-           </form> 
-          </div>
+  
+    <!--Sobre Nós-->  
+  <div class="container">
+    <div id="sobrenos" class="sobre-nos">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Sobre Nós</h3>
+          <h4>Hoje em dia é muito difícil encontrar pessoas de confiança para suprir as necessidades de nossos entes queridos. Pensando nisso, surgiu a iniciativa de criarmos um ambiente, onde profissionais da área possam oferecer seus serviços especializados de maneira clara.</h4>
+        </div>
+      </div>
+    </div>  
+  </div>
+    <!--Profissionais-->
+  <div class="container">
+    <div id="prof" class="prof-home">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Profissionais</h3>
+          <h4>Nossa preocupação está no bem estar de seus familiares. Busque e encontre através de nossa página, o profissional adequado para cuidar de quem você ama.</h4>
         </div>
       </div>
     </div>
+  </div>  
+  <!--Depoimentos-->
+  
+</body>
   <!-- Rodapé -->
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md text-center">
-          <img class="mb-2" src="img/logo.png" alt="" width="85" height="100">
-          <small class="d-block mb-3 text-muted">&copy; Bem Cuidar - 2018.</small>
+          <img class="mb-2" src="img/scs.jpg" alt="" width="70" height="70">
+          <small class="d-block mb-3 text-muted">&copy; Bem Cuidar - Todos os direitos reservados - 2018.</small>
         </div>
         <div class="col-6 col-md">
           <h5>Fale Conosco</h5>

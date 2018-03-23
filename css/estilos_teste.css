@@ -106,12 +106,68 @@ section {
     margin: 0 auto;
     border-radius: 100px;
 }
-/* Modal Box */
+body{
 
-.brandmodal .modal-title { display: block; margin-left: center; margin-right: auto; max-width:200px; max-height:300px;  }
+    padding:50px;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+/* Modal Box */
+.modal-logo { max-width:500px; max-height:200px; }
+.brandmodal .modal-title { display: block; margin-left: center; margin-right: auto;  }
 .brandmodal .modal-body { background:#474747; color:#FFFFFF; }
 .modal-body h2 { text-align: center; margin:0 auto; background:#243B81; padding:5px; color:white; margin-bottom:2px;  border-radius:5px 5px 0px 0px;}
-#botao{font-size: 15px;}
+#botao{font-size: 16px;}
 .btn btn-default{text-align: left }
 
 /* MoDAL FORM */
@@ -119,8 +175,4 @@ section {
 .modalform-group input,.modalform-group span { border-radius:0px; border:1px solid #474747; border-right:2px solid #474747; }
 .modalform-group span { background:#474747; color:#FFFFFF; }
 .modalform-group input[type=button],.modalform-group input[type=submit],.modalform-group button { border-radius:2px; margin-top:2px; }
-
-.senha{
-    text-align: right;
-}
 
