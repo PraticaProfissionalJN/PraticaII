@@ -124,3 +124,30 @@ section {
     text-align: right;
 }
 
+/* Tamanho da fonte na Navbar */
+#home{ font-size: 16px; }
+#quemsomos{ font-size: 16px; }
+#profissionais{ font-size: 16px; }
+#faleconosco{ font-size: 16px; }
+
+/* Ajustes no Fale Conosco */
+#cabeçalho_faleconosco{
+    background:#474747;
+    color:#FFFFFF;
+ }
+ #logofaleconosco{
+     margin-left: center;
+     margin-right: auto;
+     width: 160px;
+     height: 200px;
+    }
+
+    #botaoenviar{text-align: right; margin-right: auto}
+
+    #frasefaleconosco{ 
+        margin-top: 90px;
+        text-decoration-line: underline;
+     }
+     .form-groupo{
+         text-align: end;
+     }
